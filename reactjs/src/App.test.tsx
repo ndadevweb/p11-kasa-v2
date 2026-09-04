@@ -10,7 +10,7 @@ describe('App', () => {
     expect(
       screen.getByRole('heading', {
         level: 1,
-        name: /^Get started$/i,
+        name: /^KASA$/i,
       }),
     ).toBeInTheDocument();
   });
