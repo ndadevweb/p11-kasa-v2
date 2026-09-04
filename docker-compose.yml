@@ -1,0 +1,19 @@
+services:
+  reactjs:
+    build:
+      context: .
+      dockerfile: docker/reactjs/Dockerfile.dev
+  
+    working_dir: /workspace/reactjs
+
+    volumes:
+      - .:/workspace
+      - kasav2_reactjs_node_modules:/workspace/reactjs/node_modules
+
+    ports:
+      - "5173:5173"
+
+    command: sleep infinity
+  
+volumes:
+  kasav2_reactjs_node_modules:

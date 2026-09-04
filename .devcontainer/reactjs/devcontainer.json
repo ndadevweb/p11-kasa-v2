@@ -1,0 +1,29 @@
+{
+    "name": "ReactJs KasaV2",
+    "dockerComposeFile": "../../docker-compose.yml",
+    "service": "reactjs",
+    "workspaceFolder": "/workspace/reactjs",
+    "remoteUser": "node",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "vitest.explorer",
+                "usernamehw.errorlens",
+                "christian-kohler.path-intellisense",
+                "mikestead.dotenv"
+            ],
+            "settings": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true,
+                "eslint.validate": [
+                    "javascript",
+                    "javascriptreact",
+                    "typescript",
+                    "typescriptreact"
+                ]
+            }
+        }
+    }
+}

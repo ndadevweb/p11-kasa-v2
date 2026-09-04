@@ -1,0 +1,13 @@
+FROM node:24-bookworm-slim
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends gosu \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace/reactjs
+
+COPY docker/reactjs/entrypoint.sh /usr/local/bin/entrypoint.sh
+
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["entrypoint.sh"]

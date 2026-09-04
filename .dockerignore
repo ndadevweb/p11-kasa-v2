@@ -1,0 +1,10 @@
+.git
+.DS_Store
+
+reactjs/node_modules
+reactjs/dist
+reactjs/coverage
+
+backend/node_modules
+backend/dist
+backend/coverage
