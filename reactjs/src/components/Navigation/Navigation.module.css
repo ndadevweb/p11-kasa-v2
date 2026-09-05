@@ -1,0 +1,51 @@
+.navigationPrimary {
+  min-width: 310px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  align-self: center;
+}
+
+.navigationPrimary > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigationPrimary li:not(:first-child) a {
+  margin-left: 60px;
+}
+
+.navigationPrimary a {
+  color: var(--color-one);
+  text-decoration: none;
+}
+
+.navigationPrimary a.active {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .navigationPrimary {
+    min-width: auto;
+    line-height: 17px;
+    font-size: 20px;
+  }
+
+  .navigationPrimary li:not(:first-child) a {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navigationPrimary {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .navigationPrimary > ul {
+    align-content: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
