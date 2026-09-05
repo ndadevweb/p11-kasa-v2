@@ -1,5 +1,22 @@
+import './App.css';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Home from './pages/Home/Home';
+
 function App() {
-  return <h1>KASA</h1>;
+  return (
+    <>
+      <div className="container">
+        <Header />
+
+        <main>
+          <Home />
+        </main>
+      </div>
+
+      <Footer />
+    </>
+  );
 }
 
 export default App;
