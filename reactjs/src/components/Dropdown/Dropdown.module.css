@@ -1,0 +1,94 @@
+.dropdown {
+  margin-bottom: 31px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  height: max-content;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 47px;
+  border-radius: inherit;
+  background: #ff6060;
+  color: #fff;
+  font-weight: 500;
+}
+
+.buttonChangeStatus {
+  border: 0px;
+  background: inherit;
+  cursor: pointer;
+}
+
+.buttonChangeStatus img.open {
+  transform: rotate(0deg);
+}
+
+.buttonChangeStatus img.close {
+  transform: rotate(-180deg);
+}
+
+.content {
+  padding: 30px 18px 18px;
+  border-radius: inherit;
+  color: #ff6060;
+}
+
+.open .content {
+  display: block;
+}
+
+.close .content {
+  display: none;
+}
+
+.thin .title {
+  padding: 0 18px 0 20px;
+  font-size: 18px;
+}
+
+.large .title {
+  padding: 0 32px 0 18px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .dropdown {
+    margin: auto 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    height: 30px;
+    line-height: 18px;
+  }
+
+  .title,
+  .thin .title,
+  .large .title {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .buttonChangeStatus {
+    height: 24px;
+    padding: 5px 0 5px;
+  }
+
+  .buttonChangeStatus img {
+    height: 100%;
+  }
+
+  .content {
+    padding: 20px 10px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
