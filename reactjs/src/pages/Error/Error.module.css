@@ -1,0 +1,52 @@
+.content {
+  margin-top: 120px;
+}
+
+.statusCode {
+  font-weight: 700;
+  font-size: 288px;
+}
+
+.statusCode,
+.statusMessage,
+.link {
+  text-align: center;
+  color: #ff6060;
+}
+
+.statusMessage {
+  line-height: 142%;
+  font-size: 36px;
+}
+
+.link {
+  display: block;
+  margin-top: 180px;
+  line-height: 25px;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .statusCode {
+    font-size: 188px;
+  }
+
+  .statusMessage {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .statusCode {
+    font-size: 96px;
+  }
+
+  .statusMessage {
+    font-size: 18px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
