@@ -11,6 +11,7 @@ on:
 jobs:
   checks:
     runs-on: ubuntu-latest
+    environment: production
 
     defaults:
       run:
@@ -38,6 +39,9 @@ jobs:
 
       - name: Typecheck
         run: npm run typecheck
+
+      - name: Test coverage
+        run: npm run test:coverage
 
       - name: Unit Tests
         run: npm test
