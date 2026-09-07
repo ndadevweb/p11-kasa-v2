@@ -29,7 +29,7 @@ export function useFetchLodgement(): UseFetchLodgementResult {
           return;
         }
 
-        setError('Whoops ! Something is wrong !' + e);
+        setError('Whoops ! Something is wrong !');
       } finally {
         if (controller.signal.aborted === false) {
           setIsLoading(false);
