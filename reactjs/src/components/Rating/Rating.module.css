@@ -1,0 +1,13 @@
+.rating {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .rating {
+    margin: 0;
+  }
+
+  .rating img {
+    height: 16px;
+  }
+}
